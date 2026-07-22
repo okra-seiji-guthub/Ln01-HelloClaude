@@ -1,0 +1,5 @@
+{
+    "image": "claude-dev:local",
+    "remoteUser": "vscode",
+    "containerUser": "vscode"
+}

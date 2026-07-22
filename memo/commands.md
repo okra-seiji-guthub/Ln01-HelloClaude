@@ -1,11 +1,3 @@
-# Ln01-HelloClaude
-
-## Learning Claude Code for the First Time
-
-- Setting up a ClaudeCode environment using DevContainer.
-
-
-## Operations
 
 ```bash
 # build docker image
@@ -22,6 +14,3 @@ docker images claude-dev
 #     "containerUser": "vscode"
 # }
 ```
-
-Then restart vscode. 
-That's it.
