@@ -243,7 +243,7 @@
     score = 0;
     lines = 0;
     level = 1;
-    dropInterval = 800;
+    dropInterval = 600;
     dropTimer = 0;
     lastTime = 0;
     gameOver = false;
@@ -303,7 +303,7 @@
       const newLevel = Math.floor(lines / 10) + 1;
       if (newLevel !== level) {
         level = newLevel;
-        dropInterval = Math.max(100, 800 - (level - 1) * 70);
+        dropInterval = Math.max(100, 600 - (level - 1) * 70);
       }
       updateStats();
     }
