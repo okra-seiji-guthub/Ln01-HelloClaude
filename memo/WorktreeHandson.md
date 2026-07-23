@@ -80,7 +80,6 @@ git fetch --prune
 
 git branch -D feature/feature-002
 git push origin --delete feature/feature-002
-
 ```
 
 
