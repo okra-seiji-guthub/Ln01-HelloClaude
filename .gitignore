@@ -147,3 +147,8 @@ vite.config.ts.timestamp-*
 
 # something for private notes
 .private-notes/
+
+# ignore .claude directory without .claude/agents/
+!.claude/
+.claude/*
+!.claude/agents/
