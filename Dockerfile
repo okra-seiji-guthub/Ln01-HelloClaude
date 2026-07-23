@@ -3,12 +3,12 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu
 USER vscode
 
 RUN <<EOT
-apt-get update
-apt-get -y upgrade
-apt-get install -y curl
-apt-get install -y gh
-apt-get clean
-rm -rf /var/lib/apt/lists/*
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get install -y curl
+sudo apt-get install -y gh
+sudo apt-get clean
+sudo rm -rf /var/lib/apt/lists/*
 curl -fsSL https://claude.ai/install.sh | bash
 EOT
 
