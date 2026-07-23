@@ -144,3 +144,6 @@ vite.config.ts.timestamp-*
 
 # worktree files
 .worktrees/
+
+# something for private notes
+.private-notes/

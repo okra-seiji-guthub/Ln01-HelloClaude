@@ -46,7 +46,7 @@ git push origin --delete feature/feature-001
 # 
 git worktree add .worktrees/feature-002 -b feature/feature-002 main
 
-cd .worktrees/feature-001
+cd .worktrees/feature-002
 
 # commit changes and push to origin
 git add .
