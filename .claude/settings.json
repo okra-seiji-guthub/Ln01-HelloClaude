@@ -1,6 +1,6 @@
 {
   "sandbox": {
-    "enabled": true,
+    "enabled": false,
     "network": {
       "tlsTerminate": {},
       "allowedDomains": ["*.github.com", "registry.npmjs.org"]

@@ -18,4 +18,5 @@ sudo rm -rf /var/lib/apt/lists/*
 curl -fsSL https://claude.ai/install.sh | bash
 EOT
 
+
 ENV PATH="/home/vscode/.local/bin:${PATH}"
