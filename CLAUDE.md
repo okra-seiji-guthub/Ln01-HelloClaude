@@ -13,7 +13,7 @@ This is a learning repository for getting familiar with Claude Code, built on a 
   - Piece shapes/colors are defined in `SHAPES`/`COLORS` maps keyed by tetromino letter (I/J/L/O/S/Z/T).
   - Game loop uses `requestAnimationFrame` (`loop()`), driven by `dropInterval` which decreases as `level` increases (10 lines cleared per level).
   - Rotation uses a simple wall-kick offset list (`kicks = [0, -1, 1, -2, 2]`) in `rotate()`.
-- `Dockerfile` — builds the devcontainer image (Ubuntu base + `gh` CLI + Claude Code CLI installed via `curl -fsSL https://claude.ai/install.sh | bash`).
+- `Dockerfile` — builds the devcontainer image (Ubuntu base + `gh` CLI from the official GitHub CLI apt repository + Claude Code CLI installed via `curl -fsSL https://claude.ai/install.sh | bash`).
 - `.devcontainer/devcontainer.json` — points VS Code at the locally built `claude-dev:local` image.
 - `memo/` — handwritten notes from working through this repo (setup commands, git worktree hands-on notes).
 
@@ -25,6 +25,12 @@ docker build -t claude-dev:local .
 
 # check image you built
 docker images claude-dev
+
+# verify GitHub CLI version after container starts (required: 2.82.1+)
+gh --version
+
+# confirm PR view does not trigger Projects (classic) projectCards warning
+gh pr view 4
 ```
 
 `.devcontainer/devcontainer.json` should reference `"image": "claude-dev:local"` with `remoteUser`/`containerUser` set to `vscode`. After building, restart VS Code to pick up the image.

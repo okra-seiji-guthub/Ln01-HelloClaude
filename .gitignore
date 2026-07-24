@@ -152,6 +152,10 @@ vite.config.ts.timestamp-*
 !.claude/
 .claude/*
 !.claude/agents/
+!.claude/settings.json
+# sample local settings file that can be used to override .claude/settings.json
+# this file is ignored by default, but you can unignore it if you want to use it
+!.claude/settings.local.json
 
 # ignore .prompts/
 prompts/
