@@ -13,7 +13,7 @@ This is a learning repository for getting familiar with Claude Code, built on a 
   - Piece shapes/colors are defined in `SHAPES`/`COLORS` maps keyed by tetromino letter (I/J/L/O/S/Z/T).
   - Game loop uses `requestAnimationFrame` (`loop()`), driven by `dropInterval` which decreases as `level` increases (10 lines cleared per level).
   - Rotation uses a simple wall-kick offset list (`kicks = [0, -1, 1, -2, 2]`) in `rotate()`.
-- `Dockerfile` — builds the devcontainer image (Ubuntu base + `gh` CLI from the official GitHub CLI apt repository + Claude Code CLI installed via `curl -fsSL https://claude.ai/install.sh | bash`).
+- `Dockerfile` — builds the devcontainer image (`python:3.13-slim` base + Node.js via the NodeSource setup script + `gh` CLI from the official GitHub CLI apt repository + Claude Code CLI installed via `curl -fsSL https://claude.ai/install.sh | bash`).
 - `.devcontainer/devcontainer.json` — points VS Code at the locally built `claude-dev:local` image.
 - `memo/` — handwritten notes from working through this repo (setup commands, git worktree hands-on notes).
 
